@@ -22,9 +22,9 @@ Design space:
 Based on the results presented in the LambdaML paper, we select the default for the top level classes. However, the user of the library should be allowed to change these in order to perform the experiments themselves.
 NOTE: Implementing the structures bottom -> top.
 Class hierarchy (top to bottom):
-* Abstract class Training - Implemented in GaSGD, MaSGD, ADMM
-  * Abstract class Communication - Implemented in SyncAllReduce, AsyncAllReduce, SyncScatterReduce, AsyncScatterReduce
-    * Abstract class Storage - Implemented in S3, Redis, Memcached
+* Abstract class Training - Implemented in GaSGD, MaSGD, ADMM **by 5/6**
+  * Abstract class Communication - Implemented in SyncAllReduce, AsyncAllReduce, SyncScatterReduce, AsyncScatterReduce **by 4/30**
+    * Abstract class Storage - Implemented in S3, Redis, Memcached **by 4/23**
       * Other AWS primitives that might be helpful (for example some code from `data_loader`)
 
 ### Goals
