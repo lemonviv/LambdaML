@@ -26,3 +26,9 @@ Class hierarchy (top to bottom):
   * Abstract class Communication - Implemented in SyncAllReduce, AsyncAllReduce, SyncScatterReduce, AsyncScatterReduce
     * Abstract class Storage - Implemented in S3, Redis, Memcached
       * Other AWS primitives that might be helpful (for example some code from `data_loader`)
+
+### Goals
+- It should be easy for anyone to add new implementations for each of the abstraction layers (Algorithm, Storage or Communication). For example, it would be ideal if you could add other cloud providers into any of the layers.
+- For researchers: It should be possible to specify all of the parameters that might be interesting to other researchers (e.g. number of AWS Lambda instances, learning rate, convergence error range etc.)
+- For other users: If you just want to get the best performance for your use case, it should not be many lines of code to use the library.
+- At the end of the project, we should be able to run all of the experiments in the paper using the library APIs.
