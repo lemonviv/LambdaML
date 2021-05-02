@@ -33,3 +33,4 @@ Class hierarchy (top to bottom):
 - For other users: If you just want to get the best performance for your use case, it should not be many lines of code to use the library.
 - At the end of the project, we should be able to run all of the experiments in the paper using the library APIs.
 - Follow Liskov Substitution Principle and include type hinting to the exported functions
+- Add all of the nice checks into the readme, for example test coverage, following pep etc.
