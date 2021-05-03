@@ -32,5 +32,5 @@ Class hierarchy (top to bottom):
 - For researchers: It should be possible to specify all of the parameters that might be interesting to other researchers (e.g. number of AWS Lambda instances, learning rate, convergence error range etc.)
 - For other users: If you just want to get the best performance for your use case, it should not be many lines of code to use the library.
 - At the end of the project, we should be able to run all of the experiments in the paper using the library APIs.
-- Follow Liskov Substitution Principle and include type hinting to the exported functions
+- Follow Liskov Substitution Principle and include type hinting to the exported functions (use mypy for this, and see if mypy can be added to the tests)
 - Add all of the nice checks into the readme, for example test coverage, following pep etc.
